@@ -1,0 +1,133 @@
+.match-breakdown {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.match-breakdown h2 {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.rallies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.rally-card {
+  background: #f8f9fa;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.rally-card:hover {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rally-card.selected {
+  border-color: #667eea;
+  background: #f0f4ff;
+}
+
+.rally-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.rally-number {
+  font-weight: 600;
+  color: #333;
+}
+
+.rally-time {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.rally-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rally-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.score {
+  padding: 5px 15px;
+  background: white;
+  border-radius: 5px;
+}
+
+.separator {
+  color: #999;
+}
+
+.rally-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.detail-label {
+  color: #666;
+}
+
+.detail-value {
+  color: #333;
+  font-weight: 600;
+}
+
+.rally-shots {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.rally-shots h4 {
+  color: #333;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.rally-shots ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.rally-shots li {
+  padding: 5px 0;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.no-rallies {
+  text-align: center;
+  padding: 50px 0;
+  color: #999;
+}
